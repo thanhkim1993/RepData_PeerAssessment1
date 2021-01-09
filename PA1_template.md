@@ -61,7 +61,7 @@ ggplot(data = TotalStep, aes(y = totalsteps, x = date)) + geom_histogram(stat = 
   ggtitle("Total number of steps taken per day")
 ```
 
-![](PA1_template_files/figure-html/Make a histogram-1.png)<!-- -->
+![](PA1_template_files/figure-html/Make-a-histogram-1.png)<!-- -->
 
 ### Calculate and report the mean and median of the total number of steps taken per day
 
@@ -91,7 +91,7 @@ TimeSeries <- group_by(activity, interval) %>% summarise(averagesteps = mean(ste
 with(TimeSeries,plot(x = interval, y = averagesteps, type = "l", xlab = " 5-minute intervals", ylab = "Average number of steps across all day", main = ('The average number of steps across all day at various 5-minutes intervals')))
 ```
 
-![](PA1_template_files/figure-html/Plot a time-series-1.png)<!-- -->
+![](PA1_template_files/figure-html/Plot-a-time-series-1.png)<!-- -->
 
 ### Specify the 5-minute interval containing the maximum numbers of steps
 
@@ -154,7 +154,7 @@ ggplot(data = imp_TotalStep, aes(y = totalsteps, x = date, fill = mark)) +
   ggtitle("Total number of steps taken per day")
 ```
 
-![](PA1_template_files/figure-html/Make a histogram, but imputed-1.png)<!-- -->
+![](PA1_template_files/figure-html/Make-a-histogram-again-but-imputed-1.png)<!-- -->
 ### Calculate the mean and median total number of steps taken per day AFTER IMPUTATION
 
 
